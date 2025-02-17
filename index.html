@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دعوتنامه عروسی</title>
     <style>
-        @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font/dist/Farsi-Digits/font-face.css');
-        @import url('https://cdn.jsdelivr.net/gh/rastikerdar/iran-nastaliq/font-face.css');
-        @import url('https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font/dist/font-face.css');
+        /* فونت‌های محلی یا جایگزین */
+        @font-face {
+            font-family: 'Vazir';
+            src: url('fonts/Vazir.woff2') format('woff2'),
+                 url('fonts/Vazir.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'IranNastaliq';
+            src: url('fonts/IranNastaliq.woff2') format('woff2'),
+                 url('fonts/IranNastaliq.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
         body {
-            background: url('https://raw.githubusercontent.com/your-username/your-repo/main/49048260-583c-4945-a120-1df8c88e28ed') no-repeat center center fixed;
-            background-size: cover;
-            }
-
-        body {
-            font-family: 'Vazir', 'Sahel', sans-serif; /* فونت‌های زیباتر و نرم‌تر */
+            font-family: 'Vazir', 'Sahel', sans-serif; /* فونت‌های جایگزین */
             text-align: center;
             background-color: #f5e6cc;
             color: #5a4a42;
@@ -53,28 +61,28 @@
             font-size: 4vw;
             font-weight: bold;
             color: #b76e79;
-            margin-bottom: 50px; /* افزایش فاصله به 50px */
+            margin-bottom: 50px;
         }
         .names {
             font-size: 6vw;
             font-weight: bold;
             color: #8b5e3c;
             font-family: 'IranNastaliq', sans-serif;
-            line-height: 1.2; /* کاهش فاصله عمودی بین خطوط */
+            line-height: 1.2;
         }
         .names .bride {
-            text-align: right; /* دوشیزه در سمت راست */
-            display: block; /* در خط جداگانه */
-            margin-bottom: 5px; /* کاهش فاصله بین خطوط */
+            text-align: right;
+            display: block;
+            margin-bottom: 5px;
         }
         .names .and {
-            text-align: center; /* "و" در وسط */
-            display: block; /* در خط جداگانه */
-            margin-bottom: 5px; /* کاهش فاصله بین خطوط */
+            text-align: center;
+            display: block;
+            margin-bottom: 5px;
         }
         .names .groom {
-            text-align: left; /* شاه داماد در سمت چپ */
-            display: block; /* در خط جداگانه */
+            text-align: left;
+            display: block;
         }
         .poetry {
             font-size: 4vw;
@@ -84,7 +92,7 @@
         .footer-text {
             font-size: 3vw;
             font-weight: normal;
-            margin-top: 20px; /* افزایش فاصله به 20px */
+            margin-top: 20px;
         }
         .map-container {
             margin-top: 20px;
@@ -94,6 +102,11 @@
             height: 300px;
             border: 0;
             border-radius: 10px;
+        }
+        .bg-image img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
         }
     </style>
     <script>
@@ -149,7 +162,10 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.5069476304034!2d51.75844777516446!3d32.6193207920293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbc49065e2f9455%3A0x5460a3059227e59e!2sRoya%20hall!5e0!3m2!1sen!2sbe!4v1739821866894!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div class="section bg-image"></div>
+        <div class="section bg-image">
+            <!-- نمایش تصویر از ریپازیتوری GitHub -->
+            <img src="49048260-583c-4945-a120-1df8c88e28ed.jpg" alt="عکس مراسم">
+        </div>
     </div>
 </body>
 </html>
